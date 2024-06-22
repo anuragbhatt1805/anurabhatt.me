@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
-    <footer className="dark:bg-[#1D1B25] bg-gray-400 bottom-0 relative w-full">
+    <footer className="dark:bg-[#1D1B25] bg-gray-400 bottom-0 w-full">
       <div id="main" className="mx-20 py-10 grid grid-cols-10 max-md:grid-cols-1 max-md:gap-5 items-start h-fit">
         <div id="left" className="flex flex-col gap-2 col-span-4 pr-10 items-center">
           <h3 className="font-bold text-4xl mt-3 mb-6 text-[#1d1b25] bg-white px-8 py-2 rounded-full">Anurag 👨🏻‍💼</h3>
