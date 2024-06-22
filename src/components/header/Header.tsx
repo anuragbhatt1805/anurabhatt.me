@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { ThemeSwitcher } from "../ThemeSwitcher";
 import { NavLinkItem, NavLinkProps } from "./NavLinkItem.tsx";
 import { useState, useEffect } from "react";
@@ -38,11 +38,11 @@ export const Header = () => {
 
   return (
     <>
-      <header className="flex flex-row flex-wrap md:px-2 pl-2 h-10 justify-between max-md:items-start items-center font-serif">
+      <header className="flex flex-row flex-wrap md:px-2 pl-2 h-10 justify-between max-md:items-start items-center font-serif top-0">
         <div>
-          <Link to="/" className="text-4xl font-bold md:px-5 ">
+          <NavLink to="/" className="text-4xl font-bold md:px-5 ">
             Anurag
-          </Link>
+          </NavLink>
         </div>
         <div className="absolute top-1 right-2 md:hidden">
           <button onClick={() => setOpenNav(!openNav)} className="text-3xl font-sans">
@@ -50,7 +50,7 @@ export const Header = () => {
           </button>
         </div>
           {openNav && (
-        <div className={`flex flex-wrap flex-row justify-center max-md:items-start md:px-5 items-center max-md:flex-col ${openNav ? "max-md:dark:bg-[#231f31] max-md:pb-5 max-md:pt-2 max-md:rounded-bl-2xl max-md:bg-white duration-300":""} text-xl`}>
+        <div className={`flex flex-wrap flex-row justify-center max-md:items-start md:px-5 items-center max-md:flex-col ${openNav ? "max-md:dark:bg-[#231f31] max-md:bg-gray-300 max-md:pb-5 max-md:pt-2 max-md:rounded-bl-2xl duration-300":""} text-xl`}>
               <div className="md:mx-5 flex flex-wrap flex-row max-md:flex-col">
                 {navLinks.map((navLink, index) => (
                   <NavLinkItem key={index} {...navLink} />
