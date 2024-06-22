@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export function ThemeSwitcher() {
   const [theme, setTheme] = useState<String>(
@@ -20,12 +20,6 @@ export function ThemeSwitcher() {
       setTheme("light");
     }
   };
-
-  useEffect(() => {
-    const html = document.querySelector("html");
-      html?.classList.remove("light");
-      html?.classList.add("dark");
-  }, []);
 
   return (
     <>
