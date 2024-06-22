@@ -37,8 +37,8 @@ export const Header = () => {
   }, []);
 
   return (
-    <>
-      <header className="flex flex-row flex-wrap md:px-2 pl-2 h-10 justify-between max-md:items-start items-center font-serif top-0">
+    <header className="relative top-0">
+      <div className="flex flex-row flex-wrap md:px-2 pl-2 md:h-14 h-10 justify-between max-md:items-start items-center font-serif top-0 bg-gray-400 dark:bg-[#1d1b25]">
         <div>
           <NavLink to="/" className="text-4xl font-bold md:px-5 ">
             Anurag
@@ -50,7 +50,7 @@ export const Header = () => {
           </button>
         </div>
           {openNav && (
-        <div className={`flex flex-wrap flex-row justify-center max-md:items-start md:px-5 items-center max-md:flex-col ${openNav ? "max-md:dark:bg-[#231f31] max-md:bg-gray-300 max-md:pb-5 max-md:pt-2 max-md:rounded-bl-2xl duration-300":""} text-xl`}>
+        <div className={`flex flex-wrap flex-row justify-center max-md:items-start md:px-5 items-center max-md:flex-col ${openNav ? "max-md:dark:bg-[#231f31] max-md:bg-gray-400 max-md:pb-5 max-md:pt-2 max-md:rounded-bl-2xl duration-300":""} text-xl`}>
               <div className="md:mx-5 flex flex-wrap flex-row max-md:flex-col">
                 {navLinks.map((navLink, index) => (
                   <NavLinkItem key={index} {...navLink} />
@@ -68,7 +68,7 @@ export const Header = () => {
               </Link>
         </div>
           )}
-      </header>
-    </>
+      </div>
+    </header>
   );
 };
