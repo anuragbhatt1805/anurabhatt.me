@@ -41,7 +41,7 @@ export const Header = () => {
       <div className="flex flex-row flex-wrap md:px-2 pl-2 md:h-14 h-10 justify-between max-md:items-start items-center font-serif top-0 bg-gray-400 dark:bg-[#1d1b25]">
         <div>
           <NavLink to="/" className="text-4xl font-bold md:px-5 ">
-            Anurag
+            Anurag Bhatt
           </NavLink>
         </div>
         <div className="absolute top-1 right-2 md:hidden">
