@@ -50,7 +50,7 @@ export const Header = () => {
           </button>
         </div>
           {openNav && (
-        <div className={`flex flex-wrap flex-row justify-center max-md:items-start md:px-5 items-center max-md:flex-col ${openNav ? "dark:bg-[#231f31] py-5  bg-white duration-300":""}`}>
+        <div className={`flex flex-wrap flex-row justify-center max-md:items-start md:px-5 items-center max-md:flex-col ${openNav ? "dark:bg-[#231f31] py-5 rounded-bl-2xl bg-white duration-300":""}`}>
 
               <div className="md:mx-5 flex flex-wrap flex-row max-md:flex-col">
                 {navLinks.map((navLink, index) => (

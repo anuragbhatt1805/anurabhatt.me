@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export function ThemeSwitcher() {
   const [theme, setTheme] = useState<String>(
-    localStorage.getItem("theme") || "dark"
+    localStorage.getItem("theme") || "light"
   );
   const [hoverTheme, setHoverTheme] = useState<Boolean>(false);
 
