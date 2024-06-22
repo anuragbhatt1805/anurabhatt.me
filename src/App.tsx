@@ -1,12 +1,16 @@
+import { Outlet } from "react-router-dom"
 import { Header } from "./components/header/Header"
+import { Footer } from "./components/footer/Footer"
 
 function App() {
 
   return (
     <>
-    <Header />
-    <div className="text-3xl font-bold text-black bg-white dark:text-white dark:bg-gray-800">Web App in Development Process, thanks for visiting</div>
-
+    <div className="dark:bg-[#231F31] dark:text-white text-black bg-white w-full">
+      <Header />
+        <Outlet/>
+      <Footer />
+    </div>
     </>
   )
 }
