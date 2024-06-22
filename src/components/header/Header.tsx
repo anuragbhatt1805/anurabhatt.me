@@ -38,19 +38,19 @@ export const Header = () => {
 
   return (
     <>
-      <div className="flex flex-row flex-wrap md:px-2 pl-2 h-10 justify-between max-md:items-start items-center font-serif">
+      <header className="flex flex-row flex-wrap md:px-2 pl-2 h-10 justify-between max-md:items-start items-center font-serif">
         <div>
-          <Link to="/" className="text-2xl font-bold md:px-5 ">
+          <Link to="/" className="text-4xl font-bold md:px-5 ">
             Anurag
           </Link>
         </div>
         <div className="absolute top-1 right-2 md:hidden">
-          <button onClick={() => setOpenNav(!openNav)} className="text-2xl font-sans">
+          <button onClick={() => setOpenNav(!openNav)} className="text-3xl font-sans">
             {openNav ? "X" : "☰"}
           </button>
         </div>
           {openNav && (
-        <div className={`flex flex-wrap flex-row justify-center max-md:items-start md:px-5 items-center max-md:flex-col ${openNav ? "max-md:dark:bg-[#231f31] max-md:pb-5 max-md:pt-2 max-md:rounded-bl-2xl max-md:bg-white duration-300":""}`}>
+        <div className={`flex flex-wrap flex-row justify-center max-md:items-start md:px-5 items-center max-md:flex-col ${openNav ? "max-md:dark:bg-[#231f31] max-md:pb-5 max-md:pt-2 max-md:rounded-bl-2xl max-md:bg-white duration-300":""} text-xl`}>
               <div className="md:mx-5 flex flex-wrap flex-row max-md:flex-col">
                 {navLinks.map((navLink, index) => (
                   <NavLinkItem key={index} {...navLink} />
@@ -68,7 +68,7 @@ export const Header = () => {
               </Link>
         </div>
           )}
-      </div>
+      </header>
     </>
   );
 };
