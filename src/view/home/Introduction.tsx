@@ -43,7 +43,7 @@ export const Introduction = () => {
           ref={el}
         ></h3>
       </div>
-      <div className="flex flex-wrap flex-row gap-2">
+      <div className="flex flex-wrap flex-row max-md:flex-col gap-2">
         <Link
           to="#"
           className="text-lg font-semibold rounded-full py-0.5 w-36 text-center border-2 dark:text-[#1d1b25] dark:bg-white dark:hover:bg-[#1d1b25] dark:border-white dark:hover:text-white bg-[#1d1b25] text-white hover:bg-white hover:text-[#1d1b25]"
