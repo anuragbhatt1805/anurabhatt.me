@@ -1,0 +1,68 @@
+import { useEffect, useRef } from "react";
+import { FaFacebookSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+import Typed from "typed.js";
+
+export const Introduction = () => {
+  const el = useRef(null);
+
+  const roles = [
+    " Software Developer",
+    " Full Stack Developer",
+    " Server Administrator",
+    " Photographer",
+    " Traveller",
+  ];
+
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: roles,
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true,
+      shuffle: true,
+      showCursor: false
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
+  return (
+    <div className="font-serif">
+      <div className="my-5 flex flex-wrap flex-col gap-2">
+        <h2 className="text-4xl dark:text-white text-[#1d1b25] font-semibold pl-1">
+          Hello, I'm
+        </h2>
+        <h1 className="text-6xl text-[#FE7C09] font-bold">Anurag Bhatt</h1>
+        <h3
+          className="text-3xl h-9 font-semibold inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#FE7C09] via-[#9A489A] via-20% to-[#5D29F2] to-60%"
+          ref={el}
+        ></h3>
+      </div>
+      <div className="flex flex-wrap flex-row gap-2">
+        <Link
+          to="#"
+          className="text-lg font-semibold rounded-full py-0.5 w-36 text-center border-2 dark:text-[#1d1b25] dark:bg-white dark:hover:bg-[#1d1b25] dark:border-white dark:hover:text-white bg-gray-400 text-white hover:bg-white hover:text-[#1d1b25]"
+        >
+          Hire Me
+        </Link>
+        <Link
+          to="#"
+          className="text-lg font-semibold rounded-full py-0.5 w-36 text-center border-2 dark:hover:text-[#1d1b25] dark:hover:bg-white dark:bg-[#1d1b25] dark:hover:border-white dark:text-white hover:bg-gray-400 hover:text-white bg-white text-[#1d1b25]"
+        >
+          Download CV
+        </Link>
+      </div>
+      <div className="flex flex-wrap flex-row gap-3 my-5 mx-2">
+      <Link to='https://facebook.com/anurag.bhatt.52459/' target="_blank"><FaFacebookSquare size="2rem"/></Link>
+      <Link to='https://www.linkedin.com/in/anurag-bhatt-846a241b8/' target="_blank"><FaLinkedin size="2rem"/></Link>
+      <Link to='https://x.com/anuragbhatt1805' target="_blank"><FaSquareXTwitter size="2rem"/></Link>
+      <Link to='https://github.com/anuragbhatt1805/' target="_blank"><FaGithubSquare size="2rem"/></Link>
+      </div>
+    </div>
+  );
+};
