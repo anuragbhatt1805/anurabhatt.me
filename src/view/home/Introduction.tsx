@@ -46,13 +46,13 @@ export const Introduction = () => {
       <div className="flex flex-wrap flex-row gap-2">
         <Link
           to="#"
-          className="text-lg font-semibold rounded-full py-0.5 w-36 text-center border-2 dark:text-[#1d1b25] dark:bg-white dark:hover:bg-[#1d1b25] dark:border-white dark:hover:text-white bg-gray-400 text-white hover:bg-white hover:text-[#1d1b25]"
+          className="text-lg font-semibold rounded-full py-0.5 w-36 text-center border-2 dark:text-[#1d1b25] dark:bg-white dark:hover:bg-[#1d1b25] dark:border-white dark:hover:text-white bg-[#1d1b25] text-white hover:bg-white hover:text-[#1d1b25]"
         >
           Hire Me
         </Link>
         <Link
           to="#"
-          className="text-lg font-semibold rounded-full py-0.5 w-36 text-center border-2 dark:hover:text-[#1d1b25] dark:hover:bg-white dark:bg-[#1d1b25] dark:hover:border-white dark:text-white hover:bg-gray-400 hover:text-white bg-white text-[#1d1b25]"
+          className="text-lg font-semibold rounded-full py-0.5 w-36 text-center border-2 dark:hover:text-[#1d1b25] dark:hover:bg-white dark:bg-[#1d1b25] dark:hover:border-white dark:text-white hover:bg-[#1d1b25] hover:text-white bg-white text-[#1d1b25]"
         >
           Download CV
         </Link>
