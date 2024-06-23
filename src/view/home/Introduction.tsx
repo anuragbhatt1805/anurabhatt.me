@@ -39,7 +39,7 @@ export const Introduction = () => {
         </h2>
         <h1 className="text-6xl text-[#FE7C09] font-bold">Anurag Bhatt</h1>
         <h3
-          className="text-3xl h-9 font-semibold inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#FE7C09] via-[#9A489A] via-20% to-[#5D29F2] to-60% text-clip"
+          className="text-3xl h-9 font-semibold inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#FE7C09] via-[#9A489A] via-20% to-[#5D29F2] to-60% text-nowrap overflow-y-auto"
           ref={el}
         ></h3>
       </div>
