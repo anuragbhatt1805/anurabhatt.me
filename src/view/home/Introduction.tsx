@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { FaFacebookSquare, FaGithubSquare, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
+import { FaEnvelopeSquare, FaFacebookSquare, FaGithubSquare, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import Typed from "typed.js";
@@ -45,7 +45,8 @@ export const Introduction = () => {
       </div>
       <div className="flex flex-wrap flex-row max-md:flex-col gap-2">
         <Link
-          to="#"
+          to="mailto:anuragbhatt1805@gmail.com?subject=Hiring&body=Hello%20Anurag,%20I%20am%20interested%20in%20hiring%20you%20for%20a%20project."
+          target="_blank"
           className="text-lg font-semibold rounded-full py-0.5 w-36 text-center border-2 dark:text-[#1d1b25] dark:bg-white dark:hover:bg-[#1d1b25] dark:border-white dark:hover:text-white bg-[#1d1b25] text-white hover:bg-white hover:text-[#1d1b25]"
         >
           Hire Me
@@ -57,12 +58,13 @@ export const Introduction = () => {
           Download CV
         </Link>
       </div>
-      <div className="flex flex-wrap flex-row gap-3 my-5 mx-2">
+      <div className="flex flex-wrap flex-row md:gap-3 gap-2 my-5 md:mx-2">
       <Link to='https://www.linkedin.com/in/anurag-bhatt-846a241b8/' target="_blank"><FaLinkedin size="2rem"/></Link>
       <Link to='https://x.com/anuragbhatt1805' target="_blank"><FaSquareXTwitter size="2rem"/></Link>
       <Link to='https://facebook.com/anurag.bhatt.52459/' target="_blank"><FaFacebookSquare size="2rem"/></Link>
       <Link to='https://instagram.com/galaxy.click_capture/' target="_blank"><FaInstagramSquare size="2rem"/></Link>
       <Link to='https://github.com/anuragbhatt1805/' target="_blank"><FaGithubSquare size="2rem"/></Link>
+      <Link to='mailto:anuragbhatt1805@gmail.com' target="_blank"><FaEnvelopeSquare size="2rem"/></Link>
       </div>
     </div>
   );

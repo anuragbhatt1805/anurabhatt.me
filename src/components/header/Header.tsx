@@ -44,7 +44,7 @@ export const Header = () => {
             <h3 className="font-bold text-xl max-md:my-2 md:text-3xl md:mx-4 text-[#1d1b25] bg-white md:px-5 px-2 py-0.5 rounded-full">Anurag 👨🏻‍💼</h3>
           </NavLink>
         </div>
-        <div className="absolute top-1 right-2 md:hidden">
+        <div className="absolute top-1 right-4 md:hidden">
           <button onClick={() => setOpenNav(!openNav)} className="text-3xl font-sans">
             {openNav ? "X" : "☰"}
           </button>

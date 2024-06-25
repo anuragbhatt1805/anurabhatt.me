@@ -1,7 +1,8 @@
 import { Outlet } from "react-router-dom"
 import { Header } from "./components/header/Header"
 import { Footer } from "./components/footer/Footer"
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import GoTo from "./components/goto/GoTo";
 
 function App() {
   useEffect(() => {
@@ -12,11 +13,15 @@ function App() {
       html?.classList.add(theme);
   }, []);
 
+  const reference = useRef<HTMLDivElement>(null);
+
   return (
     <>
+    <div ref={reference} className="absolute"></div>
     <div className="dark:bg-[#231F31] dark:text-white text-black bg-white w-full">
       <Header />
         <Outlet/>
+        <GoTo props={reference}/>
       <Footer />
     </div>
     </>
