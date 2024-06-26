@@ -42,7 +42,7 @@ export function ThemeSwitcher() {
         <span
           className={`${
             hoverTheme ? "" : "hidden"
-          } max-lg:flex ms-3 text-sm font-medium text-gray-300 dark:text-gray-800 md:absolute md:top-10 bg-gray-800 dark:bg-white px-2 md:py-1 md:rounded-lg rounded-full`}
+          } max-md:flex ms-3 text-sm font-medium text-gray-300 dark:text-gray-800 md:absolute md:top-10 bg-gray-800 dark:bg-white px-2 md:py-1 md:rounded-lg rounded-full`}
         >
           Switch to {theme === "dark" ? "light" : "dark"}
         </span>
