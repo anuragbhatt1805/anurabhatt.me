@@ -30,7 +30,7 @@ export const HomeEducation = () => {
               <span className="text-lg font-thin italic flex flex-col">
                 <Link to="https://www.hkbk.edu.in/" target="_blank" className="hover:text-[#FE7C09]"><span className="font-semibold">HKBK College of Engineering</span>, aff. to VTU</Link>
                 <span>
-                    Bangalore, India
+                    Bengaluru, Karnataka, India
                 </span>
               </span>
               <span className="text-lg font-thin italic flex md:flex-row max-md:flex-col justify-between">
