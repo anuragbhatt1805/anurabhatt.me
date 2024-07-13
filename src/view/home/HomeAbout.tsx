@@ -9,7 +9,7 @@ export const HomeAbout = () => {
       <div className="w-full">
         <HomeTitle title="ABOUT" link="/about" linkText="Explore More" />
       </div>
-      <div className="md:grid flex flex-col md:grid-cols-[25%_75%]  items-center mx-10 gap-2 mt-10 max-md:gap-y-0 bg-gradient-to-b dark:from-[#231F31] from-white to-gray-400  dark:to-[#1D1B25] rounded-b-3xl px-5">
+      <div className="md:grid flex flex-col md:grid-cols-[25%_75%]  items-center md:mx-10 max-md:mx-5 gap-2 mt-10 max-md:gap-y-0 bg-gradient-to-b dark:from-[#231F31] from-white to-gray-400  dark:to-[#1D1B25] rounded-b-3xl px-5">
         <div className="flex flex-wrap flex-col items-center justify-center max-md:items-start">
           <img
             src="https://res.cloudinary.com/dhwszoeej/image/upload/v1719085772/t7gv2dllvimo0tevnv3f.jpg"

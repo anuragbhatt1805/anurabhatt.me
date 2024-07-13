@@ -4,7 +4,7 @@ import { Introduction } from "./Introduction";
 export function Home() {
   return (
     <div>
-      <div className="grid md:grid-cols-2 grid-cols-1 items-center mx-10 gap-2 mt-10 max-md:gap-y-10 bg-gradient-to-b dark:from-[#231F31] from-white to-gray-400  dark:to-[#1D1B25] rounded-b-3xl px-5">
+      <div className="grid md:grid-cols-2 grid-cols-1 items-center md:mx-10 max-md:mx-5 gap-2 mt-10 max-md:gap-y-10 bg-gradient-to-b dark:from-[#231F31] from-white to-gray-400  dark:to-[#1D1B25] rounded-b-3xl px-5">
         <div className="flex flex-wrap flex-col items-center justify-center">
           <Introduction />
         </div>
