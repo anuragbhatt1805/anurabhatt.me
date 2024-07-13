@@ -14,7 +14,7 @@ export const HomeAbout = () => {
           <img
             src="https://res.cloudinary.com/dhwszoeej/image/upload/v1719085772/t7gv2dllvimo0tevnv3f.jpg"
             alt="Anurag Bhatt"
-            className="md:w-60 md:h-80 w-40 h-60 rounded-3xl"
+            className="md:w-64 md:h-80 w-44 h-60 rounded-3xl"
           />
         </div>
         <div className="flex flex-col items-center justify-center md:mx-10 mx-3 h-96">
