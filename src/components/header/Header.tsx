@@ -40,7 +40,7 @@ export const Header = () => {
 
   return (
     <header className="relative top-0">
-      <div className="flex flex-row flex-wrap md:px-2 pl-2 md:h-14 h-12 justify-between max-md:items-start items-center font-serif top-0 bg-gray-400 dark:bg-[#1d1b25]">
+      <div className="flex flex-row md:px-2 pl-2 md:h-14 h-12 justify-between max-md:items-start items-center font-serif top-0 bg-gray-400 dark:bg-[#1d1b25]">
         <div>
           <NavLink to="/">
             <h3 className="font-bold text-xl max-md:my-2 md:text-3xl md:mx-4 text-[#1d1b25] bg-white md:px-5 px-2 py-0.5 rounded-full">Anurag 👨🏻‍💼</h3>
