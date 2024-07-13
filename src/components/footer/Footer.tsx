@@ -38,27 +38,28 @@ export const Footer = () => {
           className="flex flex-col gap-2 md:col-span-3 md:pr-6 items-end text-lg max-md:items-center"
         >
           <h3 className="text-3xl font-semibold my-3">Links</h3>
-          <span>Experience</span>
-          <span>Projects</span>
-          <span>Blogs</span>
-          <span>Connect With Me</span>
+          {/* <span>Experience</span> */}
+          <Link to="/experience">Experience</Link>
+          <Link to="/project">Projects</Link>
+          <Link to="https://blog.anurag-bhatt.me" target="_blank">Blog</Link>
+          <Link to="/contact">Connect With Me</Link>
         </div>
         <div
           id="right"
           className="flex flex-col gap-2 md:col-span-3 md:pr-3 items-end text-lg max-md:items-center"
         >
           <h3 className="text-3xl font-semibold my-3">Follow</h3>
-          <span>LinkedIn</span>
-          <span>Twitter (X)</span>
-          <span>Instagram</span>
-          <span>Facebook</span>
+          <Link to='https://www.linkedin.com/in/anurag-bhatt-846a241b8/' target="_blank">LinkedIn</Link>
+          <Link to='https://x.com/anuragbhatt1805' target="_blank">Twitter (X)</Link>
+          <Link to='https://instagram.com/galaxy.click_capture/' target="_blank">Instagram</Link>
+          <Link to='https://facebook.com/anurag.bhatt.52459/' target="_blank">Facebook</Link>
         </div>
       </div>
       <div
         id="foot"
         className="flex flex-row flex-wrap justify-around text-md max-md:flex-col max-md:gap-2 max-md:items-center pb-2"
       >
-        <span>Copyright @ 2024</span>
+        <span>Copyright &copy; 2024</span>
         <span>Made with 🧠</span>
         <span>🇮🇳 India</span>
       </div>
