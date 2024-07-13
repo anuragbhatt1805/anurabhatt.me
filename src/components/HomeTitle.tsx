@@ -16,7 +16,7 @@ export const HomeTitle = (props: HomeTitleProps) => {
         <Link to={props?.link}>
           <span className="flex flex-row flex-wrap items-center gap-5 text-4xl font-semibold font-serif">
             <SiNextra />
-            {props?.title}
+            {props?.title?.toUpperCase()}
           </span>
         </Link>
         <Link to={props?.link}>

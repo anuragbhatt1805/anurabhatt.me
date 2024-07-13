@@ -18,7 +18,7 @@ const navLinks: NavLinkProps[] = [
     details: "Experience & Achievement",
   },
   { to: "/project", label: "Project", details: "Project & Skills" },
-  { to: "/blog", label: "Blog", details: "Blog Portfolio", new: true },
+  { to: "https://blog.anurag-bhatt.me", label: "Blog", details: "Blog Portfolio", new: true },
   { to: "/contact", label: "Contact", details: "Connect With Me" },
 ];
 

@@ -1,4 +1,5 @@
 import { HomeAbout } from "./HomeAbout";
+import { HomeEducation } from "./HomeEducation";
 import { Introduction } from "./Introduction";
 
 export function Home() {
@@ -16,6 +17,9 @@ export function Home() {
       </div>
       <div className="flex flex-wrap flex-row items-center my-10">
         <HomeAbout/>
+      </div>
+      <div className="flex flex-wrap flex-row items-center my-10">
+        <HomeEducation />
       </div>
     </div>
   );
