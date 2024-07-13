@@ -27,13 +27,13 @@ export const HomeEducation = () => {
                   Computer Science & Engineering
                 </span>
               </div>
-              <span className="text-lg font-thin italic flex flex-col">
+              <span className="text-lg md:font-thin italic flex flex-col">
                 <Link to="https://www.hkbk.edu.in/" target="_blank" className="hover:text-[#FE7C09]"><span className="font-semibold">HKBK College of Engineering</span>, aff. to VTU</Link>
                 <span>
                     Bengaluru, Karnataka, India
                 </span>
               </span>
-              <span className="text-lg font-thin italic flex md:flex-row max-md:flex-col justify-between">
+              <span className="text-lg md:font-thin italic flex md:flex-row max-md:flex-col justify-between">
                 <span>Oct 2020 - May 2024</span>
                 <span className="hover:text-[#FE7C09]">
                   <b className="font-semibold">CGPA:</b> 8.3/10
