@@ -1,9 +1,9 @@
 import { NavLink} from "react-router-dom";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { ThemeSwitcher } from "../ThemeSwitcher";
 import { NavLinkItem, NavLinkProps } from "./NavLinkItem.tsx";
 import { useState, useEffect } from "react";
-import { DownloadButton } from "./DownloadCV.tsx";
+// import { DownloadButton } from "./DownloadCV.tsx";
 
 const navLinks: NavLinkProps[] = [
   { to: "/about", label: "About", details: "About Me" },
@@ -62,14 +62,14 @@ export const Header = () => {
               <ThemeSwitcher />
               </div>
 
-              <DownloadButton />
-              {/* <Link
+              {/* <DownloadButton /> */}
+              <Link
                 to="https://shorturl.at/1S8yA"
                 target="_blank"
                 className="max-md:mx-2 px-5 border-2 dark:border-white rounded-full font-semibold dark:hover:bg-white dark:hover:text-[#231F31] border-[#231F31] hover:bg-[#231F31] hover:text-white"
               >
                 Download CV
-              </Link> */}
+              </Link>
         </div>
           )}
       </div>
