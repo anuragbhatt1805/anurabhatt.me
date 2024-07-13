@@ -30,7 +30,7 @@ export function Home() {
       </div>
       <div className="flex flex-wrap flex-row items-center my-10">
         <div className="w-full">
-          <HomeTitle title="PROJECTS" link="/project" linkText="View All" />
+          <HomeTitle title="PROJECTS" link="/project" linkText="All Projects"/>
         </div>
         <div className="w-full flex md:flex-row max-md:flex-col justify-center gap-3 text-xl md:px-10 px-7 md:pt-4 pt-5">
           To View Projects, Please Navigate To Project Tab

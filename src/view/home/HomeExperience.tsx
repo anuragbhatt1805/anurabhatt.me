@@ -7,7 +7,7 @@ export const HomeExperience = () => {
   return (
     <>
       <div className="w-full">
-        <HomeTitle title="EXPERIENCE" link="/experience" linkText="See More" />
+        <HomeTitle title="EXPERIENCE" link="/experience" linkText="View Past" />
       </div>
       <div className="w-full md:grid flex flex-col md:grid-cols-[60%_40%]  items-center md:mx-10 max-md:mx-5 gap-2 mt-10 max-md:gap-y-0 bg-gradient-to-b dark:from-[#231F31] from-white to-gray-400  dark:to-[#1D1B25] rounded-b-3xl px-5">
         <div className="flex flex-col justify-start md:mx-10 mx-3 md:h-96 max-md:h-fit md:py-5 max-md:pb-10 max-md:gap-y-5">
@@ -48,7 +48,7 @@ export const HomeExperience = () => {
         </div>
       </div>
       <div className="w-full flex flex-row justify-end md:px-10 px-7 md:py-4 py-2">
-        <Link to='/experience' className="flex flex-row items-center gap-3 text-xl">View More <FaRegArrowAltCircleRight /></Link>
+        <Link to='/experience' className="flex flex-row items-center gap-3 text-xl">Past Experiences <FaRegArrowAltCircleRight /></Link>
       </div>
     </>
   );

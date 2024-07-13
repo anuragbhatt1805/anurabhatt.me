@@ -32,7 +32,7 @@ export const HomeAbout = () => {
         </div>
       </div>
       <div className="w-full flex flex-row justify-end md:px-10 px-7 md:py-4 py-2">
-        <Link to='/about' className="flex flex-row items-center gap-3 text-xl">View More <FaRegArrowAltCircleRight /></Link>
+        <Link to='/about' className="flex flex-row items-center gap-3 text-xl">Explore More <FaRegArrowAltCircleRight /></Link>
       </div>
     </>
   );
