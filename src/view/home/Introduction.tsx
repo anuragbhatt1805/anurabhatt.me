@@ -3,6 +3,7 @@ import { FaEnvelopeSquare, FaFacebookSquare, FaGithubSquare, FaInstagramSquare, 
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import Typed from "typed.js";
+import { DownloadButton } from "../../components/header/DownloadCV";
 
 export const Introduction = () => {
   const el = useRef(null);
@@ -51,13 +52,14 @@ export const Introduction = () => {
         >
           Hire Me
         </Link>
-        <Link
+        {/* <Link
           to="https://shorturl.at/1S8yA"
           target="_blank"
           className="text-lg font-semibold rounded-full py-0.5 w-36 text-center border-2 dark:hover:text-[#1d1b25] dark:hover:bg-white dark:bg-[#1d1b25] dark:hover:border-white dark:text-white hover:bg-[#1d1b25] hover:text-white bg-white text-[#1d1b25]"
         >
           Download CV
-        </Link>
+        </Link> */}
+        <DownloadButton />
       </div>
       <div className="flex flex-wrap flex-row md:gap-3 gap-2 my-5 md:mx-2">
       <Link to='https://www.linkedin.com/in/anurag-bhatt-846a241b8/' target="_blank"><FaLinkedin size="2rem"/></Link>
