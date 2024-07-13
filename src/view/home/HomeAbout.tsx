@@ -18,8 +18,8 @@ export const HomeAbout = () => {
           />
         </div>
         <div className="flex flex-col items-center justify-center md:mx-10 mx-3 h-96">
-          <div className="text-2xl dark:text-white text-black font-bold">
-            About Me
+          <div className="text-3xl dark:text-white text-black font-bold">
+            About Me 🙋
           </div>
           <div className="text-xl dark:text-white text-black mt-5 text-justify overflow-hidden text-clip md:mb-6 mb-3 max-md:hidden">
             {about}
