@@ -9,7 +9,7 @@ export const HomeEducation = () => {
         <HomeTitle title="EDUCATION" link="/education" linkText="See More" />
       </div>
       <div className="w-full md:grid flex flex-col md:grid-cols-[60%_40%]  items-center md:mx-10 max-md:mx-5 gap-2 mt-10 max-md:gap-y-0 bg-gradient-to-b dark:from-[#231F31] from-white to-gray-400  dark:to-[#1D1B25] rounded-b-3xl px-5">
-        <div className="flex flex-col justify-start md:mx-10 mx-3 md:h-96 max-md:h-fit md:py-10 max-md:gap-y-5">
+        <div className="flex flex-col justify-start md:mx-10 mx-3 md:h-96 max-md:h-fit md:py-10 max-md:pb-10 max-md:gap-y-5">
           <div className="md:text-center text-start text-3xl dark:text-white text-black font-bold ">
             Highest Qualification 🎓
           </div>
