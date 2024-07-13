@@ -51,7 +51,7 @@ export const HomeEducation = () => {
         </div>
       </div>
       <div className="w-full flex flex-row justify-end md:px-10 px-7 md:py-4 py-2">
-        <Link to='/education' className="flex flex-row items-center gap-3 text-xl">See All <FaRegArrowAltCircleRight /></Link>
+        <Link to='/education' className="flex flex-row items-center gap-3 text-xl text-blue-500 hover:text-blue-900">See All <FaRegArrowAltCircleRight /></Link>
       </div>
     </>
   );
