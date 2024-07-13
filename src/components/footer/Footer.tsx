@@ -39,20 +39,20 @@ export const Footer = () => {
         >
           <h3 className="text-3xl font-semibold my-3">Links</h3>
           {/* <span>Experience</span> */}
-          <Link to="/experience">Experience</Link>
-          <Link to="/project">Projects</Link>
-          <Link to="https://blog.anurag-bhatt.me" target="_blank">Blog</Link>
-          <Link to="/contact">Connect With Me</Link>
+          <Link to="/experience" className="hover:text-gray-300">Experience</Link>
+          <Link to="/project" className="hover:text-gray-300">Projects</Link>
+          <Link to="https://blog.anurag-bhatt.me" target="_blank" className="hover:text-gray-300">Blog</Link>
+          <Link to="/contact" className="hover:text-gray-300">Connect With Me</Link>
         </div>
         <div
           id="right"
           className="flex flex-col gap-2 md:col-span-3 md:pr-3 items-end text-lg max-md:items-center"
         >
           <h3 className="text-3xl font-semibold my-3">Follow</h3>
-          <Link to='https://www.linkedin.com/in/anurag-bhatt-846a241b8/' target="_blank">LinkedIn</Link>
-          <Link to='https://x.com/anuragbhatt1805' target="_blank">Twitter (X)</Link>
-          <Link to='https://instagram.com/galaxy.click_capture/' target="_blank">Instagram</Link>
-          <Link to='https://facebook.com/anurag.bhatt.52459/' target="_blank">Facebook</Link>
+          <Link to='https://www.linkedin.com/in/anurag-bhatt-846a241b8/' target="_blank" className="hover:text-gray-300">LinkedIn</Link>
+          <Link to='https://x.com/anuragbhatt1805' target="_blank" className="hover:text-gray-300">Twitter (X)</Link>
+          <Link to='https://instagram.com/galaxy.click_capture/' target="_blank" className="hover:text-gray-300">Instagram</Link>
+          <Link to='https://facebook.com/anurag.bhatt.52459/' target="_blank" className="hover:text-gray-300">Facebook</Link>
         </div>
       </div>
       <div
