@@ -23,7 +23,8 @@ export const Footer = () => {
               Hire Me
             </Link>
             <Link
-              to="#"
+              to="https://shorturl.at/1S8yA"
+              target="_blank"
               className="text-xl font-semibold rounded-full py-0.5 w-40 text-center border-2 dark:hover:text-[#1d1b25] dark:hover:bg-white dark:bg-[#1d1b25] dark:hover:border-white dark:text-white hover:bg-gray-400 hover:text-white bg-white text-[#1d1b25]"
             >
               Download CV

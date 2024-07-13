@@ -52,7 +52,8 @@ export const Introduction = () => {
           Hire Me
         </Link>
         <Link
-          to="#"
+          to="https://shorturl.at/1S8yA"
+          target="_blank"
           className="text-lg font-semibold rounded-full py-0.5 w-36 text-center border-2 dark:hover:text-[#1d1b25] dark:hover:bg-white dark:bg-[#1d1b25] dark:hover:border-white dark:text-white hover:bg-[#1d1b25] hover:text-white bg-white text-[#1d1b25]"
         >
           Download CV
