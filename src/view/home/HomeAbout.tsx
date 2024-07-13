@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import { HomeTitle } from "../../components/HomeTitle";
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
 export const HomeAbout = () => {
   const about = "Hello there! I'm Anurag Bhatt, a dedicated software engineer and full-stack developer with a deep passion for crafting innovative solutions through code. With a strong foundation in software development, I thrive on embracing new technologies and tackling complex challenges head-on. My journey in this dynamic field has been driven by a relentless curiosity and a commitment to continuous learning. Whether it's mastering the latest frameworks or refining algorithms, I approach each opportunity as a chance to expand my skill set and contribute meaningfully to projects. I am known for my adaptability, quick learning abilities, and enthusiasm for exploring cutting-edge advancements in the tech industry. Let's connect and explore how we can shape the future of software development together!"
@@ -28,6 +30,9 @@ export const HomeAbout = () => {
             {aboutMobile}
           </div>
         </div>
+      </div>
+      <div className="w-full flex flex-row justify-end md:px-10 px-7 md:py-4 py-2">
+        <Link to='/about' className="flex flex-row items-center gap-3 text-xl">View More <FaRegArrowAltCircleRight /></Link>
       </div>
     </>
   );
