@@ -1,6 +1,10 @@
+import { Link } from "react-router-dom";
+import { HomeTitle } from "../../components/HomeTitle";
 import { HomeAbout } from "./HomeAbout";
 import { HomeEducation } from "./HomeEducation";
+import { HomeExperience } from "./HomeExperience";
 import { Introduction } from "./Introduction";
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
 export function Home() {
   return (
@@ -20,6 +24,18 @@ export function Home() {
       </div>
       <div className="flex flex-wrap flex-row items-center my-10">
         <HomeEducation />
+      </div>
+      <div className="flex flex-wrap flex-row items-center my-10">
+        <HomeExperience />
+      </div>
+      <div className="flex flex-wrap flex-row items-center my-10">
+        <div className="w-full">
+          <HomeTitle title="PROJECTS" link="/project" linkText="View All" />
+        </div>
+        <div className="w-full flex md:flex-row max-md:flex-col justify-center gap-3 text-xl md:px-10 px-7 md:pt-4 pt-5">
+          To View Projects, Please Navigate To Project Tab
+          <Link to='/project' className="text-blue-500 flex flex-row items-center gap-3 hover:text-blue-900">Project Tab <FaRegArrowAltCircleRight /></Link>
+        </div>
       </div>
     </div>
   );
