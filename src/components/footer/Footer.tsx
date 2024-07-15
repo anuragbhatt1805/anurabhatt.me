@@ -50,9 +50,9 @@ export const Footer = () => {
         >
           <h3 className="text-3xl font-semibold my-3">Follow</h3>
           <Link to='https://www.linkedin.com/in/anurag-bhatt-846a241b8/' target="_blank" className="hover:text-gray-800 dark:hover:text-gray-300">LinkedIn</Link>
+          <Link to='https://github.com/anuragbhatt1805/' target="_blank" className="hover:text-gray-800 dark:hover:text-gray-300">GitHub</Link>
           <Link to='https://x.com/anuragbhatt1805' target="_blank" className="hover:text-gray-800 dark:hover:text-gray-300">Twitter (X)</Link>
           <Link to='https://instagram.com/galaxy.click_capture/' target="_blank" className="hover:text-gray-800 dark:hover:text-gray-300">Instagram</Link>
-          <Link to='https://facebook.com/anurag.bhatt.52459/' target="_blank" className="hover:text-gray-800 dark:hover:text-gray-300">Facebook</Link>
         </div>
       </div>
       <div
