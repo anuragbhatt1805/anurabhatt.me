@@ -5,9 +5,7 @@ export const Gallery = () => {
   return (
     <>
         <PageTitle title="Gallery" />
-        <div>
-            <GalleryDisplay />
-        </div>
+        <GalleryDisplay />
     </>
   )
 }

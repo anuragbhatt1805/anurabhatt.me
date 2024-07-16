@@ -39,7 +39,7 @@ export const Header = () => {
   }, []);
 
   return (
-    <header className="relative top-0">
+    <header className="relative top-0 z-50">
       <div className="flex flex-row md:px-2 pl-2 md:h-14 h-12 justify-between max-md:items-start items-center font-serif top-0 bg-gray-400 dark:bg-[#1d1b25]">
         <div>
           <NavLink to="/">

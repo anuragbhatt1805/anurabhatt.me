@@ -27,20 +27,20 @@ export const GalleryDisplay = () => {
     }, []);
 
     return (
-        <div className='py-10 max-md:px-8'>
+        <>
             {loading ? (
                 <>
-                    <div className='h-fit '>
+                    <div className='h-fit py-10 max-md:px-8'>
                         <Loading />
                     </div>
                 </>
             ) : (
-                <div className='flex flex-row max-md:flex-col md:px-20'>
+                <div className='flex flex-row max-md:flex-col md:px-20 py-10 max-md:px-8'>
                     {images?.map((image) => (
                         <GalleryImage key={image.id} {...image} />
                     ))}
                 </div>
             )}
-        </div>
+        </>
     );
 };
