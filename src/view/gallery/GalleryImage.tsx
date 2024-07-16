@@ -54,7 +54,7 @@ export const GalleryImage = (props: ImageProp) => {
 
         <div className={`${visible? 'absolute':'hidden'} bg-black bg-opacity-90 w-full h-screen top-0 left-0 max-lg:hidden`}>
             <div className="flex flex-row items-center justify-center h-full">
-                <div className="border-2 w-[80%] h-[80%] dark:bg-[#9092DA] bg-white rounded-2xl p-5"
+                <div className="border-2 w-[80%] h-fit dark:bg-[#9092DA] bg-white rounded-2xl p-5"
                 onDoubleClick={toggleVisible}>
                     <div className="flex flex-row justify-between mx-5">
                         <h1 className="text-4xl font-bold text-black space-x-5">
