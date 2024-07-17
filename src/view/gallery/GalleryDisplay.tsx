@@ -35,7 +35,7 @@ export const GalleryDisplay = () => {
                     </div>
                 </>
             ) : (
-                <div className='flex flex-row max-md:flex-col md:px-20 py-10 max-md:px-8'>
+                <div className='flex flex-row max-md:flex-col md:px-20 py-10 max-md:px-8 lg:gap-x-4 gap-y-2'>
                     {images?.map((image) => (
                         <GalleryImage key={image.id} {...image} />
                     ))}
