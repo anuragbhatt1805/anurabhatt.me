@@ -65,7 +65,7 @@ export const GalleryImage = (props: ImageProp) => {
                     </div>
 
                     <div className="flex flex-row mx-4 my-6 gap-x-5">
-                        <img src={props?.image} alt={props?.name} className="object-contain rounded-2xl w-[60%]"/>
+                        <img src={props?.image} alt={props?.name} className={`object-contain rounded-2xl ${props?.landscape ? 'w-[60%]' : 'h-[60%]'}`}/>
                         <div className="flex flex-col justify-between text-xl mx-2 my-8">
                             <div className=" text-black font-medium gap-y-2 flex flex-col">
                                 <span>Image Details</span>
