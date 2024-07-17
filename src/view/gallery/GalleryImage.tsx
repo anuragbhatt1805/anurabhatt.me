@@ -62,7 +62,7 @@ export const GalleryImage = (props: ImageProp) => {
       <div
         className={`${
           visible ? "absolute" : "hidden"
-        } bg-black bg-opacity-90 w-full h-screen top-0 left-0 max-lg:hidden`}
+        } bg-black bg-opacity-90 w-full h-screen top-0 left-0 max-lg:hidden z-50`}
       >
         <div className="flex flex-row items-center justify-center h-full">
           <div
@@ -82,11 +82,11 @@ export const GalleryImage = (props: ImageProp) => {
             </div>
 
             <div className="flex flex-row mx-4 my-6 gap-x-5">
-              <div className="flex flex-row h-96">
+              <div className={`flex flex-row h-96 w-2/3`}>
                 <img
                   src={props?.image}
                   alt={props?.name}
-                  className="object-cover rounded-2xl"
+                  className="object-cover rounded-2xl w-full h-full"
                 />
               </div>
               <div className="flex flex-col justify-between text-xl mx-2 my-8">
