@@ -47,7 +47,7 @@ export const GalleryImage = (props: ImageProp) => {
 
   return (
     <>
-        <div className="flex md:h-64 max-md:w-full border-2 dark:border-white border-black rounded-2xl shadow-xl drop-shadow-xl overflow-hidden">
+        <div className="flex md:h-64 md:w-80 max-md:w-full border-2 dark:border-white border-black rounded-2xl shadow-xl drop-shadow-xl overflow-hidden">
             <img key={props?.id} src={props?.image} alt={props?.name} className="object-cover rounded-2xl cursor-pointer transition duration-300 ease-in-out hover:scale-110"
             onClick={toggleVisible}/>
         </div>
@@ -65,7 +65,7 @@ export const GalleryImage = (props: ImageProp) => {
                     </div>
 
                     <div className="flex flex-row mx-4 my-6 gap-x-5">
-                        <img src={props?.image} alt={props?.name} className="object-contain rounded-2xl"/>
+                        <img src={props?.image} alt={props?.name} className="object-contain rounded-2xl w-[60%]"/>
                         <div className="flex flex-col justify-between text-xl mx-2 my-8">
                             <div className=" text-black font-medium gap-y-2 flex flex-col">
                                 <span>Image Details</span>
