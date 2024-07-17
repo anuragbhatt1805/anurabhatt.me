@@ -52,7 +52,7 @@ export const GalleryImage = (props: ImageProp) => {
             onClick={toggleVisible}/>
         </div>
 
-        <div className={`${visible? 'absolute':'hidden'} bg-black bg-opacity-90 w-full h-screen top-0 left-0 max-lg:hidden`}>
+        <div className={`${visible? 'absolute':'hidden'} bg-black bg-opacity-90 w-full h-screen top-0 left-0 max-lg:hidden z-50`}>
             <div className="flex flex-row items-center justify-center h-full">
                 <div className="border-2 w-[80%] h-fit dark:bg-[#9092DA] bg-white rounded-2xl p-5"
                 onDoubleClick={toggleVisible}>
@@ -65,7 +65,7 @@ export const GalleryImage = (props: ImageProp) => {
                     </div>
 
                     <div className="flex flex-row mx-4 my-6 gap-x-5">
-                        <img src={props?.image} alt={props?.name} className={`object-contain rounded-2xl ${props?.landscape ? 'w-[60%]' : 'h-[60%]'}`}/>
+                        <img src={props?.image} alt={props?.name} className={`object-contain rounded-2xl ${props?.landscape ? 'w-[60%]' : 'h-[20%]'}`}/>
                         <div className="flex flex-col justify-between text-xl mx-2 my-8">
                             <div className=" text-black font-medium gap-y-2 flex flex-col">
                                 <span>Image Details</span>
