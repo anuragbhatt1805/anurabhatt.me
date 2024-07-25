@@ -24,7 +24,7 @@ const router = createBrowserRouter(
     </Route>
   ),
   {
-    basename:'www.anurag-bhatt.me'
+    basename:'cuddly-enigma-g694w6pqq4wh9q4p-5173.app.github.dev/'
   }
 )
 
