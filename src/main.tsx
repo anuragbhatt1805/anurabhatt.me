@@ -24,7 +24,7 @@ const router = createBrowserRouter(
     </Route>
   ),
   {
-    basename:'anurag-bhatt.me'
+    basename:'www.anurag-bhatt.me'
   }
 )
 
