@@ -22,7 +22,10 @@ const router = createBrowserRouter(
       <Route path='gallery' element={<Gallery />} />
       <Route path='contact' element={<Contact />} />
     </Route>
-  )
+  ),
+  {
+    basename:'anurag-bhatt.me'
+  }
 )
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
