@@ -22,10 +22,7 @@ const router = createBrowserRouter(
       <Route path='gallery' element={<Gallery />} />
       <Route path='contact' element={<Contact />} />
     </Route>
-  ),
-  {
-    basename:'cuddly-enigma-g694w6pqq4wh9q4p-5173.app.github.dev/'
-  }
+  )
 )
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
