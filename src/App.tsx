@@ -3,8 +3,8 @@ import { Header } from "./components/header/Header"
 import { Footer } from "./components/footer/Footer"
 import { useEffect, useRef } from "react";
 import GoTo from "./components/goto/GoTo";
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 function App() {
   useEffect(() => {
