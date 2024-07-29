@@ -24,7 +24,7 @@ export const HomeExperience = () => {
             <div className="flex flex-col justify-center gap-y-3">
               <div className=" hover:text-[#6adb45] flex flex-col">
                 <span className="text-4xl font-bold">
-                  Software Engineer
+                  Freelance Software Engineer
                 </span>
               </div>
               <span className="text-lg md:font-thin italic flex flex-col">
