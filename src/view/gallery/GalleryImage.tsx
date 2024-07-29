@@ -52,7 +52,7 @@ export const GalleryImage = (props: ImageProp) => {
             key={props?.id}
             src={props?.image}
             alt={props?.name}
-            className="object-cover rounded-2xl cursor-pointer transition duration-300 ease-in-out hover:scale-110 hover:-skew-y-3 hover:-rotate-6"
+            className="object-cover rounded-2xl cursor-pointer transition duration-300 ease-in-out hover:scale-125 hover:-skew-y-2 hover:-rotate-3"
             onClick={toggleVisible}
           />
         </div>
