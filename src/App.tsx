@@ -4,6 +4,7 @@ import { Footer } from "./components/footer/Footer"
 import { useEffect, useRef } from "react";
 import GoTo from "./components/goto/GoTo";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 function App() {
   useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
   return (
     <>
     <Analytics />
+    <SpeedInsights/>
     <div ref={reference} className="absolute"></div>
     <div className="dark:bg-[#231F31] dark:text-white text-black bg-white w-full">
       <Header />
