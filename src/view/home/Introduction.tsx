@@ -12,8 +12,8 @@ export const Introduction = () => {
     " Software Developer",
     " Full Stack Developer",
     " Server Administrator",
-    " Photographer",
     " Traveller",
+    " Photographer",
   ];
 
   useEffect(() => {
