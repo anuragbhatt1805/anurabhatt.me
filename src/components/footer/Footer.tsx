@@ -17,7 +17,7 @@ export const Footer = () => {
           </h3>
           <div className="flex flex-wrap flex-col gap-5">
             <Link
-              to="mailto:anuragbhatt1805@gmail.com?subject=Hiring&body=Hello%20Anurag,%20I%20am%20interested%20in%20hiring%20you%20for%20a%20project."
+              to="mailto:hire@anurag-bhatt.me?subject=Hiring&body=Hello%20Anurag,%20I%20am%20interested%20in%20hiring%20you%20for%20a%20project."
               target="_blank"
               className="text-xl font-semibold rounded-full py-0.5 w-40 text-center border-2 dark:text-[#1d1b25] dark:bg-white dark:hover:bg-[#1d1b25] dark:border-white dark:hover:text-white bg-gray-400 text-white hover:bg-white hover:text-[#1d1b25]"
             >
