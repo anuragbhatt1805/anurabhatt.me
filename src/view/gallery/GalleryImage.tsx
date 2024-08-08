@@ -66,7 +66,7 @@ export const GalleryImage = (props: ImageProp) => {
       >
         <div className="flex flex-row items-center justify-center h-full">
           <div
-            className="border-2 w-[80%] h-fit dark:bg-[#9092DA] bg-white rounded-2xl p-5"
+            className="border-2 w-[80%] md:w-fit h-fit dark:bg-[#9092DA] bg-white rounded-2xl p-5"
             onDoubleClick={toggleVisible}
           >
             <div className="flex flex-row justify-between mx-5">
@@ -81,18 +81,18 @@ export const GalleryImage = (props: ImageProp) => {
               </button>
             </div>
 
-            <div className="flex flex-row mx-4 my-6 gap-x-5">
-              <div className={`flex flex-row h-96 w-2/3`}>
+            <div className="flex flex-row mx-4 my-6 gap-x-5 md:justify-center">
+              <div className={`flex flex-row h-96 w-2/3 md:justify-center md:w-fit`}>
                 <img
                   src={props?.image}
                   alt={props?.name}
-                  className="object-cover rounded-2xl w-full h-full"
+                  className="object-cover rounded-2xl max-md:h-full max-md:w-full"
                 />
               </div>
               <div className="flex flex-col justify-between text-xl mx-2 my-8">
                 <div className=" text-black font-medium gap-y-2 flex flex-col">
                   <span>Image Details</span>
-                  <p className="text-lg font-normal">{props?.description}</p>
+                  <p className="text-lg font-normal max-w-80">{props?.description}</p>
                 </div>
                 <div className=" text-black font-medium gap-x-2 flex flex-row">
                   <span>Added On: </span>
