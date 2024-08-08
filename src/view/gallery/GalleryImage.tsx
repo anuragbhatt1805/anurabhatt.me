@@ -24,19 +24,15 @@ export const GalleryImage = (props: ImageProp) => {
       const response = await fetch(props.image);
       const blob = await response.blob();
 
-      // Create a temporary URL for the Blob
       const blobUrl = window.URL.createObjectURL(blob);
 
-      // Create a link element
       const link = document.createElement("a");
       link.href = blobUrl;
       link.download = props.name;
 
-      // Programmatically click the link to trigger the download
       document.body.appendChild(link);
       link.click();
 
-      // Clean up: remove the temporary URL and the link element
       window.URL.revokeObjectURL(blobUrl);
       document.body.removeChild(link);
     } catch (error) {
