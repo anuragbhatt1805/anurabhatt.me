@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
 import { UpdatingSoon } from "../../components/UpdatingSoon"
+import { PageTitle } from "../../components/PageTitle"
 import { calculate } from "../../util/ExpCalculator"
+import { RollNumber } from "../../components/RollNumber"
 
 export type ExperienceProp = {
     company: string,
@@ -15,7 +17,6 @@ export type ExperienceProp = {
     website?: string
 }
 
-// eslint-disable-next-line react-refresh/only-export-components
 export const data: ExperienceProp[] = [
     {
         company: "Whiteboard Technologies Pvt. Ltd",
@@ -69,9 +70,20 @@ export const Experience = () => {
     }, [])
 
     return (
-        <div className="h-screen flex flex-col items-center justify-center">
-            <h1 className="text-4xl font-bold">Experience</h1>
+        <>
+            <PageTitle title="Experience" />
+            <div className="flex flex-col items-center">
+                <div className="h-fit w-full flex flex-row items-center justify-center dark:bg-[#1D1B25] bg-gray-400 md:mb-5 mb-2 md:mx-1 mx-10">
+                    <div className="font-bold md:text-4xl text-xl md:my-3 my-1">
+                        <span className="dark:text-red-600 text-orange-900">Total Experience:</span>
+                        <span className="md:mx-5 mx-2 dark:text-green-600 text-violet-900">
+                            <RollNumber value={Math.floor(totalExperience/12)} delay={50}/> Years {" "}
+                            <RollNumber value={totalExperience%12} delay={100}/> Months
+                        </span>
+                    </div>
+                </div>
             <UpdatingSoon />
-        </div>
+            </div>
+        </>
     )
 }
