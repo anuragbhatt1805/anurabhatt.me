@@ -5,9 +5,10 @@ export type ExperienceProp = {
     position: string,
     startDate: string,
     endDate: string,
-    location: string | "Remote",
+    location: string | "Remote" | "Hybrid",
     description?: string,
-    skills ?: string[],
+    softskills ?: string[],
+    hardskills ?: string[],
     coordinates?: [number, number],
     website?: string
 }
