@@ -76,7 +76,7 @@ export const University = ( data: EducationProp ) => {
                 <div className="flex flex-col items-center justify-center max-md:hidden w-full h-full pr-10">
                     <MapView
                         position={data?.coordinates}
-                        popup="HKBK College of Engineering"
+                        popup={data?.university}
                     />
                 </div>
             )

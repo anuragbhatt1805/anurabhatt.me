@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react"
-import { UpdatingSoon } from "../../components/UpdatingSoon"
 import { PageTitle } from "../../components/PageTitle"
 import { calculate } from "../../util/ExpCalculator"
 import { RollNumber } from "../../components/RollNumber"
+import { Workplace } from "./Workplace"
 
 export type ExperienceProp = {
+    logo: string,
     company: string,
     position: string,
     startDate: Date, // in MM-DD-YYYY
@@ -19,6 +20,7 @@ export type ExperienceProp = {
 
 export const data: ExperienceProp[] = [
     {
+        logo: "https://res.cloudinary.com/dhwszoeej/image/upload/v1720907582/assets_2Fimage_2Flogo_2Fwhiteboardtec-logo_ahfydo.png",
         company: "Whiteboard Technologies Pvt. Ltd",
         position: "Software Engineer",
         startDate: new Date('02-20-2024'),
@@ -31,16 +33,19 @@ export const data: ExperienceProp[] = [
         hardskills: ['HTML', 'CSS', 'JavaScript', 'Python', 'React', 'Redux-Toolkit', 'Nodejs', 'Express.js', 'Cloudinary', 'Django', 'Redis', 'PostgreSQL', 'MongoDB', 'Nginx']
     },
     {
+        logo: "https://res.cloudinary.com/dhwszoeej/image/upload/v1723296101/algo-bucks-logo-removebg-preview-A856q9V1gxHrkp5V_qomhay.avif",
         company: "Algobucks",
         position: "Python Developer Intern",
         startDate: new Date('10-11-2023'),
         endDate: new Date('11-23-2023'),
         location: "Remote",
+        website: "https://algobucks.com",
         description: "Python Developer Intern at Algobucks, working on various projects in the tech industry.",
         softskills: ["Effective Communication", "Problem Solving", 'Analytical Thinking'],
         hardskills: ['Python', 'Flask', 'MongoDB', 'Pandas', 'MatPlotLib']
     },
     {
+        logo: "https://res.cloudinary.com/dhwszoeej/image/upload/v1720903507/HKBK-College-Logo_gxdzp3.png",
         company: "HKBK College of Engineering",
         position: "ELAB Administrator",
         startDate: new Date('02-14-2022'),
@@ -82,7 +87,13 @@ export const Experience = () => {
                         </span>
                     </div>
                 </div>
-            <UpdatingSoon />
+            </div>
+            <div className="flex flex-col w-full px-5 items-center">
+                {
+                    data.map((item, index) => (
+                        <Workplace key={index} {...item} />
+                    ))
+                }
             </div>
         </>
     )

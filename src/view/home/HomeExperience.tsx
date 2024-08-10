@@ -35,7 +35,7 @@ export const HomeExperience = () => {
               </span>
               <span className="text-lg md:font-thin italic flex md:flex-row max-md:flex-col justify-between">
                 <span >On - Site</span>
-                <span className="hover:text-[#FE7C09]">Feb 2024 - July 2024</span>
+                <span className="hover:text-[#FE7C09]">Feb 2024 - Present</span>
               </span>
             </div>
           </div>
