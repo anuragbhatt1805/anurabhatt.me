@@ -170,7 +170,7 @@ const skills: SkillProp[] = [
     {
         color: "#525A69",
         logo: "https://res.cloudinary.com/dhwszoeej/image/upload/v1723325347/9831953.webp",
-        percentage: 655
+        percentage: 55
     },
     {
         color: "#FF8F6B",
