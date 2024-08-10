@@ -30,10 +30,10 @@ export function Home() {
       </div>
       <div className="flex flex-wrap flex-row items-center my-10">
         <div className="w-full">
-          <HomeTitle title="PROJECTS" link="/project" linkText="All Projects"/>
+          <HomeTitle title="PROJECTS & SKILLS" link="/project" linkText="All Projects"/>
         </div>
         <div className="w-full flex md:flex-row max-md:flex-col justify-center gap-3 text-xl md:px-10 px-7 md:pt-4 pt-5">
-          To View Projects, Please Navigate To Project Tab
+          To View Projects & Skills, Please Navigate To Project Tab
           <Link to='/project' className="text-blue-500 flex flex-row items-center gap-3 hover:text-blue-900">Project Tab <FaRegArrowAltCircleRight /></Link>
         </div>
       </div>
