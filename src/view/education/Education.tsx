@@ -1,5 +1,5 @@
 import { PageTitle } from "../../components/PageTitle"
-import { UpdatingSoon } from "../../components/UpdatingSoon"
+import { University } from "./University"
 
 export type EducationProp = {
     logo: string,
@@ -31,7 +31,7 @@ export const data : EducationProp[] = [
         coordinates: [13.036, 77.6199],
         hardskills: ["Python", "JAVA", "C", "Javascript", "MySQL", "MongoDB", "Android Studio", "Data Structures & Algorithm", "Raspberry Pi"],
         softskills: ["Teamwork", "Time Management", "Leadership", "Adaptability", "Problem-Solving"]
-    }, 
+    },
     {
         logo: "",
         university: "Tomar Children School",
@@ -47,7 +47,7 @@ export const data : EducationProp[] = [
         softskills: ["Analytical Thinking", "Time Management", "Communication"]
     },
     {
-        logo: "",
+        logo: "https://res.cloudinary.com/dhwszoeej/image/upload/v1723292610/sara_cppyjx.png",
         university: "Sant Atulanand Residential Academy",
         degree: "High School (10)",
         major: "Science + IT",
@@ -66,7 +66,13 @@ export const Education = () => {
     return (
         <>
             <PageTitle title="Education"/>
-            <UpdatingSoon />
+            <div className="flex flex-col w-full px-5 items-center">
+                {
+                    data.map((item, index) => (
+                        <University key={index} {...item} />
+                    ))
+                }
+            </div>
         </>
     )
 }

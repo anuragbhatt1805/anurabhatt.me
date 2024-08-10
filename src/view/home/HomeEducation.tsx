@@ -20,7 +20,7 @@ export const HomeEducation = () => {
               className="h-14 bg-white rounded-full p-1"
             />
             <div className="flex flex-col justify-center gap-y-3">
-              <div className=" hover:text-[#FE7C09] flex flex-col">
+              <div className=" hover:dark:text-[#FE7C09] hover:text-blue-800 flex flex-col">
                 <span className="text-4xl font-bold">
                   Bachelor of Engineering
                 </span>
@@ -29,14 +29,14 @@ export const HomeEducation = () => {
                 </span>
               </div>
               <span className="text-lg md:font-thin italic flex flex-col">
-                <Link to="https://www.hkbk.edu.in/" target="_blank" className="hover:text-[#FE7C09]"><span className="font-semibold">HKBK College of Engineering</span>, aff. to VTU</Link>
+                <Link to="https://www.hkbk.edu.in/" target="_blank" className="hover:dark:text-[#FE7C09] hover:text-blue-800"><span className="font-semibold">HKBK College of Engineering</span>, aff. to VTU</Link>
                 <span>
                     Bengaluru, Karnataka, India
                 </span>
               </span>
               <span className="text-lg md:font-thin italic flex md:flex-row max-md:flex-col justify-between">
                 <span>Oct 2020 - May 2024</span>
-                <span className="hover:text-[#FE7C09]">
+                <span className="hover:dark:text-[#FE7C09] hover:text-blue-800">
                   <b className="font-semibold">CGPA:</b> 8.3/10
                 </span>
               </span>
