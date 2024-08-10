@@ -18,7 +18,7 @@ export type ExperienceProp = {
     website?: string
 }
 
-export const data: ExperienceProp[] = [
+const data: ExperienceProp[] = [
     {
         logo: "https://res.cloudinary.com/dhwszoeej/image/upload/v1720907582/assets_2Fimage_2Flogo_2Fwhiteboardtec-logo_ahfydo.png",
         company: "Whiteboard Technologies Pvt. Ltd",
