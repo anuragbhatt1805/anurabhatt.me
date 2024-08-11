@@ -1,10 +1,11 @@
-import { UpdatingSoon } from "../../components/UpdatingSoon"
+import { PageTitle } from "../../components/PageTitle"
+import { ContactForm } from "./ContactForm"
 
 export const Contact = () => {
     return (
-        <div className="h-screen flex flex-col items-center justify-center">
-            <h1 className="text-4xl font-bold">Contact</h1>
-            <UpdatingSoon />
-        </div>
+        <>
+            <PageTitle title="Contact Me" />
+            <ContactForm />
+        </>
     )
 }
