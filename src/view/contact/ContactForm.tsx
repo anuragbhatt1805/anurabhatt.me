@@ -29,7 +29,7 @@ export function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-white dark:bg-[#1D1B25] shadow-md p-6 border-2 rounded-3xl md:w-1/2 md:mx-auto md:text-2xl text-lg md:my-10 my-4 mx-7"
+      className="bg-gray-400 dark:bg-[#1D1B25] shadow-md p-6 border-2 rounded-3xl md:w-1/2 md:mx-auto md:text-2xl text-lg md:my-10 my-4 mx-7"
     >
       <div className="mb-4">
         <label
@@ -42,7 +42,7 @@ export function ContactForm() {
           id="name"
           type="text"
           name="name"
-          className="w-full px-3 text-black py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-3 text-black py-2 border-2 border-black dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         <ValidationError
           prefix="Name"
@@ -62,7 +62,7 @@ export function ContactForm() {
           id="email"
           type="email"
           name="email"
-          className="w-full px-3 text-black py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-3 text-black py-2 border-2 border-black dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         <ValidationError
           prefix="Email"
@@ -82,7 +82,7 @@ export function ContactForm() {
           id="subject"
           type="text"
           name="subject"
-          className="w-full px-3 py-2 border text-black border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-3 py-2 border-2 text-black border-black dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         <ValidationError
           prefix="Subject"
@@ -101,7 +101,7 @@ export function ContactForm() {
         <textarea
           id="message"
           name="message"
-          className="w-full px-3 py-2 border text-black border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-3 py-2 border-2 text-black border-black dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         <ValidationError
           prefix="Message"
