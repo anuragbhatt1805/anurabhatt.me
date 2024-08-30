@@ -46,7 +46,7 @@ export const ProjectDetail = (props: ProjectProp) => {
     }, [handleNextImage, props.image]);
 
   return (
-    <div className="w-full md:w-[90%] md:grid flex flex-col md:grid-cols-[60%_40%] justify-center items-center md:mx-10 max-md:mx-5 gap-2 my-5 h-fit max-md:pb-10 max-md:gap-y-0 bg-gray-400 dark:bg-[#1D1B25] rounded-3xl px-5">
+    <div className="w-full md:w-[90%] md:grid flex flex-col md:grid-cols-[60%_40%] justify-center items-center md:mx-10 max-md:mx-5 gap-2 my-5 h-fit max-md:pb-6 max-md:gap-y-0 bg-gray-400 dark:bg-[#1D1B25] rounded-3xl px-5">
       <div className="flex flex-col justify-start items-start md:mx-10 mx-3 h-fit md:py-10 max-md:pb-5 max-md:gap-y-5 max-md:pt-8">
         <div className="flex flex-col gap-4 max-md:mx-auto md:px-16 md:my-7">
           <div className="flex flex-col justify-center gap-y-3">
@@ -119,13 +119,13 @@ export const ProjectDetail = (props: ProjectProp) => {
         </div>
       </div>
       {props.image && (
-            <div className="w-full h-full flex flex-col items-center justify-center pr-10">
+            <div className="w-full h-full flex flex-col items-center justify-center md:pr-10">
                 <div
                     id="image-carousel"
-                    className="relative w-full"
+                    className="relative w-full bg-white rounded-xl"
                     data-carousel="static"
                 >
-                    <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
+                    <div className="relative h-56 overflow-hidden rounded-lg md:h-96 w-full">
                         {props.image.map((imgSrc, index) => (
                             <div
                                 key={index}
@@ -144,7 +144,7 @@ export const ProjectDetail = (props: ProjectProp) => {
                     </div>
                     <button
                         type="button"
-                        className="absolute top-0 left-0 z-30 flex items-center justify-center h-full max-md:px-2 px-4 cursor-pointer group focus:outline-none text-black bg-gray-300 rounded-l-xl"
+                        className="absolute top-[40%] md:top-[45%] left-1 z-30 flex items-center justify-center h-fit max-md:p-2 p-4 cursor-pointer group focus:outline-none text-black bg-gray-300 rounded-full"
                         data-carousel-prev
                         onClick={handlePrevImage}
                     >
@@ -152,7 +152,7 @@ export const ProjectDetail = (props: ProjectProp) => {
                     </button>
                     <button
                         type="button"
-                        className="absolute top-0 right-0 z-30 flex items-center justify-center h-full max-md:px-2 px-4 cursor-pointer group focus:outline-none text-black bg-gray-300 rounded-r-xl"
+                        className="absolute top-[40%] md:top-[45%] right-1 z-30 flex items-center justify-center h-fit max-md:p-2 p-4 cursor-pointer group focus:outline-none text-black bg-gray-300 rounded-full"
                         data-carousel-next
                         onClick={handleNextImage}
                     >
