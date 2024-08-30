@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { ProjectProp } from "./Project";
 import { Tag } from "../../components/Tag";
 import { Link } from "react-router-dom";
@@ -8,20 +8,20 @@ import { FaLink } from "react-icons/fa";
 export const ProjectDetail = (props: ProjectProp) => {
     const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
 
-    const handlePrevImage = () => {
-        setCurrentImageIndex((prevIndex : number) => {
+    const handlePrevImage = useCallback(() => {
+        setCurrentImageIndex((prevIndex) => {
             if (props.image){
                 if (prevIndex === 0) {
-                    return props?.image?.length - 1;
+                    return props.image?.length - 1;
                 } else {
                     return prevIndex - 1;
                 }
             }
             return 0;
         });
-    };
+    }, [props.image]);
 
-    const handleNextImage = () => {
+    const handleNextImage = useCallback(() => {
         setCurrentImageIndex((prevIndex) => {
             if (props.image){
                 if (prevIndex === props.image?.length - 1) {
@@ -32,7 +32,18 @@ export const ProjectDetail = (props: ProjectProp) => {
             }
             return 0;
         });
-    };
+    }, [props.image]);
+
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            handleNextImage();
+        }, 3000);
+    
+        return () => {
+            clearInterval(interval);
+        };
+    }, [handleNextImage, props.image]);
 
   return (
     <div className="w-full md:w-[90%] md:grid flex flex-col md:grid-cols-[60%_40%] justify-center items-center md:mx-10 max-md:mx-5 gap-2 my-5 h-fit max-md:pb-10 max-md:gap-y-0 bg-gray-400 dark:bg-[#1D1B25] rounded-3xl px-5">
