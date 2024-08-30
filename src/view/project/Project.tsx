@@ -1,6 +1,6 @@
 import { PageTitle } from "../../components/PageTitle";
-import { UpdatingSoon } from "../../components/UpdatingSoon";
 import { Skill } from "./Skill";
+import { ProjectDetail } from "./ProjectDetail";
 
 export type ProjectProp = {
   name: string;
@@ -20,6 +20,25 @@ export type SkillProp = {
   percentage: number;
   logo: string;
 };
+
+const projects: ProjectProp[] = [
+    {
+        name: "Project 1",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt dolor at dolor facilisis, a iaculis neque placerat. Sed non est vel felis facilisis convallis.",
+        technology: ["React", "TypeScript", "GraphQL", "Apollo Client"],
+        date: "01-01-2022",
+        image: [
+            "https://res.cloudinary.com/dhwszoeej/image/upload/v1723318596/HTML5_logo_and_wordmark.svg_zos1px.png",
+            "https://res.cloudinary.com/dhwszoeej/image/upload/v1723322829/Python-Logo-Free-Download-PNG_fystvn.png",
+            "https://res.cloudinary.com/dhwszoeej/image/upload/v1723323237/typescript_plain_logo_icon_146316_s3ewcx.png",
+            "https://res.cloudinary.com/dhwszoeej/image/upload/v1723323993/1175203_ietgom.webp",
+        ],
+        link: "https://example.com/project1",
+        github: "https://github.com/project1",
+        docker: "https://hub.docker.com/r/project1",
+        status: "Completed"
+    }
+]
 
 const skills: SkillProp[] = [
     {
@@ -187,8 +206,18 @@ const skills: SkillProp[] = [
 export const Project = () => {
   return (
     <>
-      <PageTitle title="Projects" />
-      <UpdatingSoon />
+      {projects.length > 0 && (
+          <>
+          <PageTitle title="Projects" />
+          <div className="flex max-md:flex-col flex-row w-full px-5 md:mb-10 mb-4">
+            <div className="flex flex-row md:mx-16 flex-wrap items-center justify-center">
+              {projects.map((item, index) => (
+                <ProjectDetail key={index} {...item} />
+              ))}
+            </div>
+          </div>
+        </>
+      )}
       {skills.length > 0 && (
         <>
           <PageTitle title="Skills" />
