@@ -12,7 +12,7 @@ export const Footer = () => {
           id="left"
           className="flex flex-col gap-2 md:col-span-4 md:pr-10 items-center"
         >
-          <h3 className="font-bold text-4xl mt-3 mb-6 text-[#1d1b25] bg-white px-8 py-2 rounded-full">
+          <h3 className="font-bold text-4xl mt-3 mb-6 text-[#1d1b25] bg-white px-8 py-2 rounded-full select-none">
             Anurag 👨🏻‍💼
           </h3>
           <div className="flex flex-wrap flex-col gap-5">
