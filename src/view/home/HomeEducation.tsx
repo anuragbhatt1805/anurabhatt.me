@@ -35,7 +35,7 @@ export const HomeEducation = () => {
                 </span>
               </span>
               <span className="text-lg md:font-thin italic flex md:flex-row max-md:flex-col justify-between">
-                <span>Oct 2020 - May 2024</span>
+                <span>Oct 2020 - June 2024</span>
                 <span className="hover:dark:text-[#FE7C09] hover:text-blue-800">
                   <b className="font-semibold">CGPA:</b> 8.3/10
                 </span>
